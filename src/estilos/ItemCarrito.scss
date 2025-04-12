@@ -1,0 +1,64 @@
+@import './global.scss';
+.item-carrito {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $color-gris-medio;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .detalles {
+    flex-grow: 1;
+
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: $color-texto-principal;
+    }
+
+    p {
+      margin-bottom: 5px;
+      color: $color-texto-secundario;
+
+      &.precio {
+        font-weight: bold;
+        color: $color-texto-principal;
+      }
+    }
+  }
+
+  .boton-eliminar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken(#dc3545, 10%);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba(#dc3545, 0.5);
+    }
+  }
+}

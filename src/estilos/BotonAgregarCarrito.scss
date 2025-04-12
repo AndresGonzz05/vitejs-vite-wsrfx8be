@@ -1,0 +1,20 @@
+@import './global.scss';
+.boton-agregar-carrito {
+  background-color: wheat;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($color-primario, 10%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba($color-primario, 0.5);
+  }
+}
