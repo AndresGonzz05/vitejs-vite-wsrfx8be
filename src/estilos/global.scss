@@ -80,17 +80,17 @@ nav ul li.carrito-link a {
 
 nav ul li.carrito-link a {
   font-size: 1.5rem;
-  position: relative; /* Necesario para posicionar el contador */
+  position: relative;
 }
 
 .contador-carrito {
   position: absolute;
-  top: -8px; /* Ajusta la posición vertical */
-  right: -8px; /* Ajusta la posición horizontal */
-  background-color: $color-secundario; /* Fondo verde */
+  top: -8px; 
+  right: -8px; 
+  background-color: $color-secundario; 
   color: white;
   font-size: 0.7rem;
   padding: 3px 6px;
-  border-radius: 50%; /* Forma de círculo */
-  z-index: 1; /* Asegura que esté por encima del icono */
+  border-radius: 50%; 
+  z-index: 1; 
 }
